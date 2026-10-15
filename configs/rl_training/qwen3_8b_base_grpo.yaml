@@ -1,0 +1,18 @@
+# GRPO training for Qwen3-8B-Base (paper §4.1).
+#
+# Same recipe as the 4B pair; only the model and the parallelism change.
+# Selected checkpoint: step 320.
+
+defaults:
+  - qwen3_4b_base_grpo
+  - _self_
+
+actor_rollout_ref:
+  model:
+    path: ${oc.env:QWEN3_8B_BASE_PATH}
+  rollout:
+    tensor_model_parallel_size: 4
+
+trainer:
+  experiment_name: qwen3_8b_base_grpo
+  total_training_steps: 400

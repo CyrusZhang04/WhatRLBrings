@@ -1,0 +1,15 @@
+# Core analysis (CPU only) — enough to run everything under wrb/analysis and wrb/metrics.py
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+math-verify>=0.5.2
+
+# Generation / interventions (GPU). Pin exact versions for your experiment.
+torch>=2.4
+transformers>=4.44
+accelerate>=0.33
+
+# Optional: vLLM backend for the batched baselines (base sampling, greedy, prefill).
+# rl-replace itself needs per-step logits from two models and uses the
+# transformers backend.
+# vllm>=0.6.0

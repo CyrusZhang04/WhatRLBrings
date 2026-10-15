@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: If you use this code, please cite the paper.
+title: "What RL Brings to Reasoning: A Few Decisions the Base Model Would Not Make"
+abstract: >-
+  Reinforcement learning substantially improves base language models on hard
+  math problems, but what it adds to the base model remains unclear. We test
+  common explanations of this gain with a sequence of diagnostic interventions
+  on the base model of an RL-trained Qwen3-4B pair, using 120 AIME problems.
+type: software
+license: MIT
+year: 2026
+authors:
+  - family-names: Zhang
+    given-names: Siyu
+  - family-names: Lu
+    given-names: Yuquan
+  - family-names: Li
+    given-names: Yoshua Y.
+  - family-names: Ding
+    given-names: Yifan
+  - family-names: Zeng
+    given-names: Kun
+  - family-names: Huo
+    given-names: Yu
+  - family-names: Guo
+    given-names: Yifu
+  - family-names: Weng
+    given-names: Rongxiang
+  - family-names: Cai
+    given-names: Xunliang
+  - family-names: Tang
+    given-names: Xiaoying
+keywords:
+  - reinforcement learning
+  - language models
+  - mathematical reasoning
+  - RLVR
+  - decoding
